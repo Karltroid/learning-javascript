@@ -3,111 +3,8 @@
 <head>
 	<title>learning javascript</title>
 	<link rel="icon" href="favicon.ico" />
-	<style type="text/css">
-
-		body
-		{
-			margin: 0px;
-			text-align: center;
-			background-color: rgba(0,0,0,.04);
-			font-family: cabinRegular;
-			font-weight: lighter;
-			text-transform: lowercase;
-		}
-
-		h1, h2, h3, h4, h5
-		{
-			font-weight: normal;
-		}
-
-		@font-face
-		{
-			font-family: cabinBold;
-			src: url(Cabin-Bold.otf);
-		}
-
-		@font-face
-		{
-			font-family: cabinRegular;
-			src: url(Cabin-Regular.otf);
-		}
-
-		.Bold
-		{
-			font-weight: bold;
-		}
-
-		.Header
-		{
-			font-size: 45px;
-			background-color: rgba(0,0,0,.1);
-			padding: 20px;
-			padding-bottom: 26px;
-			border-bottom-style: solid;
-			border-bottom-width: 1px;
-			text-shadow: 2px 2px rgba(0,0,0,.2);
-		}
-
-		.body
-		{
-			font-size: 20px;
-			vertical-align: middle;
-			padding-bottom: 20px;
-		}
-
-		button
-		{
-			background-color: rgba(0,0,0,.01);
-			font-family: cabinRegular;
-			padding: 20px;
-			border-style: dashed;
-			transition: 1s;
-			outline: 0;
-		}
-
-		button:hover
-		{
-			background-color: rgba(0,0,0,.1);
-			transition: 1s;
-		}
-
-		span
-		{
-			border-bottom-width: 1px;
-			border-bottom-style: solid;
-		}
-
-		.js1
-		{
-			padding-top: 10px;
-			padding-bottom: 0px;
-		}
-
-		.js2
-		{
-			padding-top: 5px;
-			padding-bottom: 5px;
-		}
-
-		.js3
-		{
-			padding-top: 5px;
-			padding-bottom: 5px;
-		}
-
-		.js4
-		{
-			padding-top: 9px;
-			padding-bottom: 0px;
-		}
-
-		.js4p
-		{
-			padding: 0px;
-		}
-
-	</style>
-
+	<link rel="stylesheet" type="text/css" href="indexStyles.css" />
+	<script src="indexScripts.js"></script>
 </head>
 <body>
 
@@ -122,7 +19,7 @@
 <!-- [START] display date/time -->
 	<h2><b>#1 -</b> <span>display date/time</span></h2>
 	<button class="js1" type="button"
-	onclick="document.getElementById('time').innerHTML = Date()">
+	onclick="time()">
 		<b>click me to display : </b> date and time<br><p id="time">---</p>
 	</button><br><br>
 <!-- [END] display date/time -->
@@ -131,7 +28,7 @@
 <!-- [START] changing html content -->
 	<h2><b>#2 -</b> <span>changing html content</span></h2>
 	<button class="js2" type="button"
-	onclick="document.getElementById('textchange').innerHTML = 'This is the changed content!'">
+	onclick="textChange()">
 		<p id="textchange">This is the regular content.</p>
 	</button><br><br>
 <!-- [END] changing html content -->
@@ -140,12 +37,12 @@
 <!-- [START] changing html attributes -->
 	<h2><b>#3 -</b> <span>changing html attributes</span></h2>
 	<button class="js3"
-	onclick="document.getElementById('light').src='lightbulb-on.png'">
+	onclick="lightOn()">
 		<b>light :</b> on
 	</button>
 		<img id="light" src="lightbulb-off.png">
 	<button class="js3"
-	onclick="document.getElementById('light').src='lightbulb-off.png'">
+	onclick="lightOff()">
 		<b>light :</b> off
 	</button><br><br>
 <!-- [END] changing html attributes -->
@@ -154,7 +51,7 @@
 <!-- [START] changing html styles (css) -->
 	<h2><b>#4 -</b> <span>changing html styles (css)</span></h2>
 	<button class="js4" type="button"
-	onclick="document.getElementById('stylechange').style.fontSize='35px'">
+	onclick="styleChange()">
 		<b>click to change :</b> font size
 		<p class="js4p" id="stylechange">sample text</p>
 	</button><br><br>
@@ -164,7 +61,7 @@
 <!-- [START] hiding html elements -->
 	<h2><b>#5 -</b> <span>hiding html elements</span></h2>
 	<p id="hidingelement"><button type="button"
-	onclick="document.getElementById('hidingelement').style.display='none'">
+	onclick="hidingElement()">
 		<b>click to hide :</b> button
 	</button></p><br>
 <!-- [END] hiding html elements -->
@@ -173,20 +70,21 @@
 <!-- [START] showing html elements -->
 	<h2><b>#6 -</b> <span>showing html elements</span></h2>
 	<button type="button"
-	onclick="document.getElementById('showingelement').style.display='inline'">
+	onclick="showingElement()">
 		<b>click to show :</b> potato
 	</button><br><br>
 	<img id="showingelement" src="potato.png" width="150" style="display: none;"><br>
 <!-- [END] showing html elements -->
 
 
-<!-- [START] using the script tag to write text -->
-	<h2><b>#7 -</b> <span>using the script tag to write text</span></h2>
+<!-- [START] using javascript to write text -->
+	<h2><b>#7 -</b> <span>using javascript to write text</span></h2>
 	<p id="textwithscripts">the content here will get replaced by what the javascript wants it to display.</p>
 	<script>
-		document.getElementById("textwithscripts").innerHTML = "the script tag is where all javascript programming should take place!<br> javascript can be done in the body, head, or an external javascript file, url, or folder.";
-	</script><br><br>
-<!-- [END] using the script tag to write text -->
+		document.getElementById("textwithscripts").innerHTML = "the script tag is where all javascript programming should take place!<br>javascript can be done in the body, head, or an external javascript file, url, or folder.";
+	</script>
+	<br><br>
+<!-- [END] using javascript to write text -->
 
 </div>
 
