@@ -12,6 +12,7 @@
 			background-color: rgba(0,0,0,.04);
 			font-family: cabinRegular;
 			font-weight: lighter;
+			text-transform: lowercase;
 		}
 
 		h1, h2, h3, h4, h5
@@ -183,7 +184,7 @@
 	<h2><b>#7 -</b> <span>using the script tag to write text</span></h2>
 	<p id="textwithscripts">the content here will get replaced by what the javascript wants it to display.</p>
 	<script>
-		document.getElementById("textwithscripts").innerHTML = "the script tag is where all javascript programming should take place! javascript can be done in the body, head, or an external javascript file.";
+		document.getElementById("textwithscripts").innerHTML = "the script tag is where all javascript programming should take place!<br> javascript can be done in the body, head, or an external javascript file.";
 	</script>
 <!-- [END] using the script tag to write text -->
 
