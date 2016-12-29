@@ -178,6 +178,15 @@
 	<img id="showingelement" src="potato.png" width="150" style="display: none;"><br>
 <!-- [END] showing html elements -->
 
+
+<!-- [START] using the script tag to write text -->
+	<h2><b>#7 -</b> <span>using the script tag to write text</span></h2>
+	<p id="textwithscripts">the content here will get replaced by what the javascript wants it to display.</p>
+	<script>
+		document.getElementById("textwithscripts").innerHTML = "the script tag is where all javascript programming should take place!";
+	</script>
+<!-- [END] using the script tag to write text -->
+
 </div>
 
 </body>
