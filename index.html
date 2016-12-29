@@ -58,8 +58,6 @@
 			background-color: rgba(0,0,0,.01);
 			font-family: cabinRegular;
 			padding: 20px;
-			padding-top: 10px;
-			padding-bottom: 0px;
 			border-style: dashed;
 			transition: 1s;
 			outline: 0;
@@ -77,6 +75,24 @@
 			border-bottom-style: solid;
 		}
 
+		.js1
+		{
+			padding-top: 10px;
+			padding-bottom: 0px;
+		}
+
+		.js2
+		{
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+
+		.js3
+		{
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+
 	</style>
 
 </head>
@@ -92,18 +108,22 @@
 
 	<h2><b>#1 -</b> <span>display date/time</span></h2>
 
-	<button type="button"
+	<button class="js1" type="button"
 	onclick="document.getElementById('time').innerHTML = Date()">
 	<b>click me to display : </b> date and time<br><p id="time">---</p>
 	</button><br>
 
 	<h2><b>#2 -</b> <span>changing html content</span></h2>
 
-	<button type="button" onclick="document.getElementById('textchange').innerHTML = 'This is the changed content!'">
+	<button class="js2" type="button" onclick="document.getElementById('textchange').innerHTML = 'This is the changed content!'">
 		<p id="textchange">This is the regular content.</p>
 	</button><br>
 
 	<h2><b>#3 -</b> <span>changing html attributes</span></h2>
+
+	<button class="js3" onclick="document.getElementById('light').src='lightbulb-on.png'"><b>light :</b> on</button>
+	<img id="light" src="lightbulb-off.png">
+	<button class="js3" onclick="document.getElementById('light').src='lightbulb-off.png'"><b>light :</b> off</button>
 
 </div>
 
