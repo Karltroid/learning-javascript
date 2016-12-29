@@ -51,6 +51,7 @@
 		{
 			font-size: 20px;
 			vertical-align: middle;
+			padding-bottom: 20px;
 		}
 
 		button
@@ -93,6 +94,17 @@
 			padding-bottom: 5px;
 		}
 
+		.js4
+		{
+			padding-top: 9px;
+			padding-bottom: 0px;
+		}
+
+		.js4p
+		{
+			padding: 0px;
+		}
+
 	</style>
 
 </head>
@@ -106,24 +118,46 @@
 
 <div class="body">
 
+<!-- [START] display date/time -->
 	<h2><b>#1 -</b> <span>display date/time</span></h2>
-
 	<button class="js1" type="button"
 	onclick="document.getElementById('time').innerHTML = Date()">
-	<b>click me to display : </b> date and time<br><p id="time">---</p>
-	</button><br>
+		<b>click me to display : </b> date and time<br><p id="time">---</p>
+	</button><br><br>
+<!-- [END] display date/time -->
 
+
+<!-- [START] changing html content -->
 	<h2><b>#2 -</b> <span>changing html content</span></h2>
-
-	<button class="js2" type="button" onclick="document.getElementById('textchange').innerHTML = 'This is the changed content!'">
+	<button class="js2" type="button"
+	onclick="document.getElementById('textchange').innerHTML = 'This is the changed content!'">
 		<p id="textchange">This is the regular content.</p>
-	</button><br>
+	</button><br><br>
+<!-- [END] changing html content -->
 
+
+<!-- [START] changing html attributes -->
 	<h2><b>#3 -</b> <span>changing html attributes</span></h2>
+	<button class="js3"
+	onclick="document.getElementById('light').src='lightbulb-on.png'">
+		<b>light :</b> on
+	</button>
+		<img id="light" src="lightbulb-off.png">
+	<button class="js3"
+	onclick="document.getElementById('light').src='lightbulb-off.png'">
+		<b>light :</b> off
+	</button><br><br>
+<!-- [END] changing html attributes -->
 
-	<button class="js3" onclick="document.getElementById('light').src='lightbulb-on.png'"><b>light :</b> on</button>
-	<img id="light" src="lightbulb-off.png">
-	<button class="js3" onclick="document.getElementById('light').src='lightbulb-off.png'"><b>light :</b> off</button>
+
+<!-- [START] changing html styles (css) -->
+	<h2><b>#4 -</b> <span>changing html styles (css)</span></h2>
+	<button class="js4" type="button"
+	onclick="document.getElementById('stylechange').style.fontSize='35px'">
+		<b>click to change :</b> font size
+		<p class="js4p" id="stylechange">sample text</p>
+	</button><br><br>
+<!-- [END] changing html styles (css) -->
 
 </div>
 
