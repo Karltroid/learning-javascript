@@ -1,39 +1,34 @@
-	function time()
+	function time() // #1
 	{
 		document.getElementById('time').innerHTML = Date();
 	}
 
-	function textChange()
+	function textChange() // #2
 	{
 		document.getElementById('textchange').innerHTML = 'This is the changed content!';
 	}
 
-	function lightOn()
+	function lightOn() // #3
 	{
 		document.getElementById('light').src='lightbulb-on.png';
 	}
 
-	function lightOff()
+	function lightOff() // #4
 	{
 		document.getElementById('light').src='lightbulb-off.png';
 	}
 
-	function styleChange()
+	function styleChange() // #5
 	{
 		document.getElementById('stylechange').style.fontSize='35px';
 	}
 
-	function hidingElement()
+	function hidingElement() // #6
 	{
 		document.getElementById('hidingelement').style.display='none';
 	}
 
-	function showingElement()
+	function showingElement() // #7
 	{
 		document.getElementById('showingelement').style.display='inline';
-	}
-
-	function textWithScripts()
-	{
-		document.getElementById("textwithscripts").innerHTML = "the script tag is where all javascript programming should take place!<br>javascript can be done in the body, head, or an external javascript file, url, or folder.";
 	}
