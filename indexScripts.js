@@ -32,3 +32,13 @@
 	{
 		document.getElementById('showingelement').style.display='inline';
 	}
+
+	// Writing into an alert box, using window.alert().
+	// Writing into the HTML output using document.write().
+	// Writing into an HTML element, using innerHTML.
+	// Writing into the browser console, using console.log().
+
+	function windowAlert() // #8
+	{
+		window.alert('This is a test alert message!');
+	}
