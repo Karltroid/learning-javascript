@@ -78,7 +78,7 @@
 
 
 <!-- [START] using javascript to write text -->
-	<h2><b>#7 -</b> <span>using javascript to write text</span></h2>
+	<h2><b>#7 -</b> <span>using javascript to write text in elements</span></h2>
 	<p id="textwithscripts">the content here will get replaced by what the javascript wants it to display.</p>
 	<script>
 		document.getElementById("textwithscripts").innerHTML = "the script tag is where all javascript programming should take place!<br>javascript can be done in the body, head, or an external javascript file, url, or folder.";
@@ -92,8 +92,16 @@
 	<button type="button"
 	onclick="windowAlert()">
 		<b>click to show :</b> window alert
-	</button>
+	</button><br><br>
 <!-- [END] using window.alert() -->
+
+<!-- [START] using document.write() -->
+	<h2><b>#9 -</b> <span>using document.write()</span></h2>
+	<script>
+		document.write('This is a message using document.write! -- 5 * 3 / 5 = ');
+		document.write(5*3/5);
+	</script>
+<!-- [END] using document.write() -->
 
 </div>
 
