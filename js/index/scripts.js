@@ -65,7 +65,7 @@
 
 	function htmlReplacement() // #10
 	{
-		document.write('<!DOCTYPE html><html><head><title>error!</title><link rel="stylesheet" type="text/css" href="css/index/styles.css" /></head><body><div class="Header"><b>learning</b> javascript</div><div class="body"><h2><b>I told you!</b></h2><br><font color="green">"press F5"</font></div></body></html>');
+		document.write('<!DOCTYPE html><html><head><title>error!</title><link rel="stylesheet" type="text/css" href="../../css/index/styles.css" /></head><body><div class="Header"><b>learning</b> javascript</div><div class="body"><h2><b>I told you!</b></h2><br><font color="green">"press F5"</font></div></body></html>');
 		//to edit only a element do .getElementById("ID").innerHTML = message;
 	}
 
@@ -75,5 +75,3 @@
 	// Hyphens(-) are not allowed in JavaScript Identifiers, they are reserved for subtractions.
 	// multiple statements on one line are allowed by using semicolons(;) -- ex. a=5; b=6; c=a+b;
 	// javascript ignores white space -- ex. x=7 is the same as x = 7
-
-	if (true) {}
