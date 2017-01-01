@@ -2,9 +2,10 @@
 <html>
 <head>
 	<title>learning javascript</title>
-	<link rel="icon" href="favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="indexStyles.css" />
-	<script src="indexScripts.js"></script>
+	<link rel="icon" href="images/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="css/index/styles.css" />
+	<script src="js/index/scripts.js"></script>
+	<script src="js/index/effects"></script>
 </head>
 <body>
 
@@ -14,7 +15,7 @@
 
 </div>
 
-<div class="body">
+<div class="body" id="bodyeffect">
 
 <!-- [START] display date/time -->
 	<h2><b>#1 -</b> <span>display date/time</span></h2>
@@ -40,7 +41,7 @@
 	onclick="lightOn()">
 		<b>light :</b> on
 	</button>
-		<img id="light" src="lightbulb-off.png">
+		<img id="light" src="images/index/lightbulb-off.png">
 	<button class="js3"
 	onclick="lightOff()">
 		<b>light :</b> off
@@ -73,7 +74,7 @@
 	onclick="showingElement()">
 		<b>click to show :</b> potato
 	</button><br><br>
-	<img id="showingelement" src="potato.png" width="150" style="display: none;"><br>
+	<img id="showingelement" src="images/index/potato.png" width="150" style="display: none;"><br>
 <!-- [END] showing html elements -->
 
 
@@ -107,7 +108,7 @@
 <!-- [START] replacing all existing HTML -->
 	<h2><b>#10 -</b> <span>replacing all existing HTML with document.write()</span></h2>
 	<button onclick="htmlReplacement()">
-		<b><font color="red">*warning*</font> dangerous!<b>
+		<b><font color="red">*warning*</font> dangerous!</b>
 	</button><br><br>
 <!-- [END] replacing all existing HTML -->
 
@@ -120,8 +121,21 @@
 		console.log('whats 5 * 5?');
 		console.log(5*5);
 	</script>
-	<font class="Bold">press</font> <font class="notBold">'f12'</font><br><br>
+	<b>press</b> 'f12'<br><br>
 <!-- [END] using console.log() -->
+
+
+<!-- [START] Javascript expression using keywords/variables/operators (program) -->
+	<h2><b>#12 -</b> <span>javascript expression using keywords/variables/operators (program)</span></h2>
+	<b>x</b> * <b>y</b> = <font id="5*6xyz"></font><p><b>x</b> = 5<br> <b>y</b> = 6</p>
+	<script>
+		var x, y, z;
+		x = 5;
+		y = 6;
+		z = x * y;
+		document.getElementById("5*6xyz").innerHTML = z;
+	</script><br><br>
+<!-- [END] Javascript expression using kewwords/variables/operators (program) -->
 
 </div>
 

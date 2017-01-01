@@ -14,19 +14,13 @@
 
 		h1, h2, h3, h4, h5
 		{
-			font-weight: normal;
-		}
-
-		@font-face
-		{
-			font-family: cabinBold;
-			src: url(Cabin-Bold.otf);
+			font-weight: lighter;
 		}
 
 		@font-face
 		{
 			font-family: cabinRegular;
-			src: url(Cabin-Regular.otf);
+			src: url(../../fonts/Cabin-Regular.otf);
 		}
 
 		.Bold
