@@ -46,4 +46,5 @@
 	function htmlReplacement()
 	{
 		document.write('<!DOCTYPE html><html><head><title>error!</title><link rel="stylesheet" type="text/css" href="indexStyles.css" /></head><body><div class="Header"><b>learning</b> javascript</div><div class="body"><h2><b>I told you!</b></h2><br><font color="green">"press F5"</font></div></body></html>');
+		//to edit only a element do .getElementById("ID").innerHTML = message;
 	}
