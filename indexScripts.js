@@ -42,8 +42,3 @@
 	{
 		window.alert('This is a test alert message!');
 	}
-
-	function documentWrite()
-	{
-		document.write('This is a message using document.write!' '5+5 = '(5+5));
-	}
