@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	$('div.body').fadeIn(1000);
+	$('div.body').hide().fadeIn(1000);
 
 });
 

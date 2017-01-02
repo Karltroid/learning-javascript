@@ -38,12 +38,15 @@
 			border-bottom-style: solid;
 			border-bottom-width: 1px;
 			text-shadow: 2px 2px rgba(0,0,0,.2);
-
 		}
 
 		.title
 		{
 			font-size: 45px;
+						margin-left: auto;
+			margin-right: auto;
+			display: inline-block;
+			position: relative;
 		}
 
 		.nextpage
@@ -61,7 +64,6 @@
 			padding-bottom: 20px;
 			padding-left: 2px;
 			padding-right: 2px;
-			display: none;
 		}
 
 		button
@@ -89,4 +91,22 @@
 		.basicselector
 		{
 			padding: 5px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 300px;
+		}
+
+		.basicanimation
+		{
+			padding: 3px;
+		}
+
+		.box
+		{
+			background-color: lightgray;
+			width: 42px;
+			font-size: 35px;
+			vertical-align: middle;
+			margin-left: auto;
+			margin-right: auto;
 		}
