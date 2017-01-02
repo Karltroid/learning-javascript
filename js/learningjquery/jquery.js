@@ -3,7 +3,7 @@ $(document).ready(function(){ // telling to start running the js code when the p
 // CODE vvvvv
 
 // Fade in effect
-$('div.body').hide().fadeIn(1000);
+$('div.body').fadeIn(1000);
 
 	// BASIC SELECTORS
 	$('p.basicselector').css('border', '4px solid red'); // in this example we are editing the css of any <p> with a class of basicselector.
