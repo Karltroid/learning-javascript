@@ -13,7 +13,7 @@ $('div.body').fadeIn(1000);
 
 		$('.box:eq(0)').slideUp().slideDown().slideUp().slideDown().slideUp().slideDown().slideUp().slideDown();
 		$('.box:eq(1)').animate({height: '200px', width: '200px'}, 900).animate({height: '42px', width: '42px'}, 900);
-		$('.box:eq(2)').css('position', 'absolute').css('left', '49%').animate({top:'3000px'}, 1000);
+		$('.box:eq(2)').css('position', 'absolute').css('left', '49%').animate({top:'3000px'}, 1000).fadeOut();
 
 	});
 	// INDEX FILTER
