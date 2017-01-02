@@ -1,3 +1,11 @@
+$(document).ready(function(){
+
+	$('div.body').fadeIn(1000);
+
+});
+
+// --------------------------------------------------------------
+
 // break			Terminates a switch or a loop
 // continue			Jumps out of a loop and starts at the top
 // debugger			Stops the execution of JavaScript, and calls (if available) the debugging function

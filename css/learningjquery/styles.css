@@ -61,6 +61,7 @@
 			padding-bottom: 20px;
 			padding-left: 2px;
 			padding-right: 2px;
+			display: none;
 		}
 
 		button
@@ -83,4 +84,9 @@
 		{
 			border-bottom-width: 1px;
 			border-bottom-style: solid;
+		}
+
+		.basicselector
+		{
+			padding: 5px;
 		}

@@ -1,11 +1,15 @@
-$(document).ready(function(){
+// $ = jquery
+$(document).ready(function(){ // telling to start running the js code when the page loads
+// CODE vvvvv
 
+// Fade in effect
+$('div.body').fadeIn(1000);
 
 	// BASIC SELECTORS
-	$('body').css('border', '4px solid red');
+	$('p.basicselector').css('border', '4px solid red'); // in this example we are editing the css of any <p> with a class of basicselector.
 
 	// BASIC ANIMATIONS
-
+	$('');
 
 	// INDEX FILTER
 
@@ -16,4 +20,5 @@ $(document).ready(function(){
 	// ATTRIBUTE FILTERS
 
 
+// CODE ^^^^^
 });
