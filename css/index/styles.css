@@ -85,6 +85,12 @@
 			border-bottom-style: solid;
 		}
 
+		.itjustworks
+		{
+			height: 100%;
+			width: 100%;
+		}
+
 		.js1
 		{
 			padding-top: 10px;

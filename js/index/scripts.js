@@ -80,6 +80,6 @@ $(document).ready(function(){
 
 	function htmlReplacement() // #10
 	{
-		document.write('<!DOCTYPE html><html><head><title>error!</title><link rel="stylesheet" type="text/css" href="css/index/styles.css" /></head><body><div class="Header"><b>learning</b> javascript</div><div class="body"><h2><b>I told you!</b></h2><br><font color="green">"press F5"</font></div></body></html>');
+		document.write('<!DOCTYPE html><html><head><title>It just works</title><link rel="stylesheet" type="text/css" href="css/index/styles.css" /></head><body><img class="itjustworks" src="images/index/itjustworks.png"></body></html>');
 		//to edit only a element do .getElementById("ID").innerHTML = message;
 	}
