@@ -1,0 +1,8 @@
+<img style="display:inline-block; height: 35vh; margin-bottom: 2vh;" src="../images/guitar.png" alt="Learning Guitar" />
+<div>
+	different
+</div>
+<div style="margin-top: 8vh;">
+	<img id="L1" style="height: 7vh; margin-right: 1vw; cursor: pointer;" src="../images/arrowL.png" />
+	<img id="R1" style="height: 7vh; margin-left: 1vw; cursor: pointer;" src="../images/arrowR.png" />
+</div>
